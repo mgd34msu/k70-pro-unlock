@@ -1,0 +1,27 @@
+{
+  "model": "K70_PRO",
+  "brand": "raemond",
+  "platform": "ums512",
+  "build": "K70_Pro_US_A16_20260912",
+  "fingerprint": "raemond/K70Pro_US/K70Pro:16/BP2A.250605.031.A3/2026091201:user/release-keys",
+  "tested_slot": "a",
+  "stock": {
+    "splloader.img": {"size": 4194304, "sha256": "7dcca9c96c83c53cedd5320ffd61ff3fa5815bfdffc4d4f1a42b2015add3560d"},
+    "splloader_bak.img": {"size": 4194304, "sha256": "7dcca9c96c83c53cedd5320ffd61ff3fa5815bfdffc4d4f1a42b2015add3560d"},
+    "uboot_a.img": {"size": 3145728, "sha256": "42107ba345d4b7b9b96cced95ea22360b0655513b0291e3b38012e2f67eeec0c"},
+    "uboot_b.img": {"size": 3145728, "sha256": "42107ba345d4b7b9b96cced95ea22360b0655513b0291e3b38012e2f67eeec0c"},
+    "init_boot_a.img": {"size": 8388608, "sha256": "d08b993abf72a72b6fa767a99af71ee67c9088650e3e0e15c552ad6df3b53392"},
+    "init_boot_b.img": {"size": 8388608, "sha256": "d08b993abf72a72b6fa767a99af71ee67c9088650e3e0e15c552ad6df3b53392"},
+    "vbmeta_a.img": {"size": 1048576, "sha256": "dbf950022978c09d983da4dae85138efceb209ab70f3999dfa86b556e9df922c"},
+    "vbmeta_b.img": {"size": 1048576, "sha256": "dbf950022978c09d983da4dae85138efceb209ab70f3999dfa86b556e9df922c"},
+    "misc.img": {"size": 1048576},
+    "miscdata.img": {"size": 1048576}
+  },
+  "patched": {
+    "splloader-unlocked.img": "34f221f1b15cd27c6a6bd8c0537d9e82475e3f40596e5e37d9cc30263862d63c",
+    "uboot-unlocked.img": "68353cbd9cc219135300dd81aa1ccd6ad7cf8c4674502b6c4990a15afea53f3a"
+  },
+  "spl": {"payload_size": 63472, "verify_sites_file_offsets": [44560, 44832, 45152, 45204, 45252], "verify_target_file_offset": 45392},
+  "uboot": {"load_base": 2667577344, "lock_patch_payload_offset": 399380, "original_word": 3531603969, "replacement_word": 335544331, "unlocked_payload_offset": 399424},
+  "reference_magisk": {"version": "30.7", "patched_sha256": "0a5777ac2d057d0fa9c041a8bd685c539396fbb11d56946fddb18f98f4cafdf0", "note": "Historical result only. Patch your own captured image on the target tablet."}
+}

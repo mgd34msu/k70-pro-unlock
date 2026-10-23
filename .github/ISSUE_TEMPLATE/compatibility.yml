@@ -1,0 +1,33 @@
+name: Compatibility or installation report
+description: Report a result with firmware details, without personal device data.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One firmware build is supported. Do not bypass the image checks to try another build.
+        Do not post serial numbers, IMEIs, unlock tokens, credentials, raw miscdata, or unredacted device logs.
+  - type: input
+    id: model
+    attributes:
+      label: Brand and model
+    validations:
+      required: true
+  - type: input
+    id: fingerprint
+    attributes:
+      label: Build fingerprint
+      description: The output of getprop ro.build.fingerprint; omit your serial.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Result and exact step
+      description: Include the failing check or final root result. Explain whether anything was written.
+    validations:
+      required: true
+  - type: textarea
+    id: host
+    attributes:
+      label: Host OS, tool revisions, and image hashes
+      description: Hashes and public firmware metadata are useful; personal logs and device-unique partitions are not needed.

@@ -1,0 +1,10 @@
+/work/
+/.venv/
+__pycache__/
+*.py[cod]
+*.img
+*.bin
+*.apk
+*.log
+.env
+.env.*
